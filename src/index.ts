@@ -12,7 +12,7 @@ import { Recipes } from "./recipes";
 
 class AetherPlugin extends Plugin implements PluginEvents {
   public constructor() {
-    super("aether-plugin", "0.1.0");
+    super("the-aether", "0.1.0");
   }
 
   public override onInitialize(): void {
