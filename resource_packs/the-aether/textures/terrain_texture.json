@@ -1,0 +1,53 @@
+{
+  "texture_name": "atlas.terrain",
+  "texture_data": {
+    "aether_dirt": {
+      "textures": "textures/blocks/natural/aether_dirt"
+    },
+    "aether_grass_block_top": {
+      "textures": "textures/blocks/natural/aether_grass_block_top"
+    },
+    "aether_grass_block_side": {
+      "textures": "textures/blocks/natural/aether_grass_block_side"
+    },
+    "quicksoil": {
+      "textures": "textures/blocks/natural/quicksoil"
+    },
+    "holystone": {
+      "textures": "textures/blocks/natural/holystone"
+    },
+    "skyroot_log_top": {
+      "textures": "textures/blocks/natural/skyroot_log_top"
+    },
+    "skyroot_log_side": {
+      "textures": "textures/blocks/natural/skyroot_log"
+    },
+    "skyroot_planks": {
+      "textures": "textures/blocks/construction/skyroot_planks"
+    },
+    "skyroot_leaves": {
+      "textures": "textures/blocks/natural/skyroot_leaves"
+    },
+    "purple_flower": {
+      "textures": "textures/blocks/natural/purple_flower"
+    },
+    "white_flower": {
+      "textures": "textures/blocks/natural/white_flower"
+    },
+    "aether_short_grass": {
+      "textures": "textures/blocks/natural/aether_short_grass"
+    },
+    "icestone": {
+      "textures": "textures/blocks/natural/icestone"
+    },
+    "ambrosium_ore": {
+      "textures": "textures/blocks/natural/ambrosium_ore"
+    },
+    "zanite_ore": {
+      "textures": "textures/blocks/natural/zanite_ore"
+    },
+    "gravitite_ore": {
+      "textures": "textures/blocks/natural/gravitite_ore"
+    }
+  }
+}

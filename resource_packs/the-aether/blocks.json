@@ -1,0 +1,45 @@
+{
+  "format_version": "1.21.100",
+  "aether:dirt": {
+    "sound": "grass"
+  },
+  "aether:grass_block": {
+    "sound": "grass"
+  },
+  "aether:quicksoil": {
+    "sound": "sand"
+  },
+  "aether:holystone": {
+    "sound": "stone"
+  },
+  "aether:icestone": {
+    "sound": "stone"
+  },
+  "aether:skyroot_log": {
+    "sound": "wood"
+  },
+  "aether:skyroot_planks": {
+    "sound": "wood"
+  },
+  "aether:skyroot_leaves": {
+    "sound": "grass"
+  },
+  "aether:purple_flower": {
+    "sound": "grass"
+  },
+  "aether:white_flower": {
+    "sound": "grass"
+  },
+  "aether:short_grass": {
+    "sound": "grass"
+  },
+  "aether:ambrosium_ore": {
+    "sound": "stone"
+  },
+  "aether:zanite_ore": {
+    "sound": "stone"
+  },
+  "aether:gravitite_ore": {
+    "sound": "stone"
+  }
+}

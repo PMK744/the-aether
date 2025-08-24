@@ -1,8 +1,9 @@
 {
-  "name": "sample-plugin",
-  "version": "1.0.0",
-  "author": "SerenityJS",
-  "description": "Sample plugin provides a basic configuration for plugin usage in the SerenityJS software.",
+  "private": true,
+  "name": "the-aether",
+  "version": "0.1.0",
+  "author": "PMK744",
+  "description": "Adds the Aether dimension with custom terrain, blocks, and items.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "license": "MIT",
@@ -10,15 +11,16 @@
     "build": "tsup",
     "watch": "tsup --watch"
   },
-  "keywords": [],
+  "keywords": ["Custom Terrain", "Custom Blocks", "Custom Items"],
   "peerDependencies": {
     "@serenityjs/core": "*",
-    "@serenityjs/plugins": "*",
-    "@serenityjs/protocol": "*",
     "@serenityjs/logger": "*",
-    "@serenityjs/nbt": "*"
+    "@serenityjs/nbt": "*",
+    "@serenityjs/plugins": "*",
+    "@serenityjs/protocol": "*"
   },
   "devDependencies": {
+    "@types/node": "^24.3.0",
     "tsup": "^8.3.5",
     "typescript": "^5.6.3"
   }

@@ -1,43 +1,35 @@
-import { Plugin, PluginEvents, PluginPriority } from "@serenityjs/plugins";
+import { Plugin, type PluginEvents } from "@serenityjs/plugins";
 
-// This is a sample plugin that has a class-based implementation.
-// In Serenity, there are two types of plugins: class-based and function-based.
-// Class-based plugins are more flexible and can be used to create more complex plugins.
-// Function-based plugins are simpler and are used for creating simple plugins.
+import "./worker";
 
-class SamplePlugin extends Plugin implements PluginEvents {
-  // Declare the priorty of the plugin.
+import { AetherIslandsGenerator } from "./generator";
+import { WorldInitializeSignal } from "@serenityjs/core";
 
-  // Depending on the priority, plugins will be initialized in a specific order.
-  // Plugins with a higher priority will be initialized first.
-  public readonly priority: PluginPriority = PluginPriority.Low;
 
+import { BlockTypes } from "./blocks";
+import { ItemTypes } from "./items";
+import { Recipes } from "./recipes";
+
+class AetherPlugin extends Plugin implements PluginEvents {
   public constructor() {
-    // Super assigns the name and version of the plugin.
-    // There is an additional parameter that can be passed to the super constructor,
-    // but since this is a class-based plugin, it is not required, as the properties & methods can be directly created in the class.
-    super("sample-plugin", "1.0.0");
+    super("aether-plugin", "0.1.0");
   }
 
-  // This method is called right after the plugin is loaded from the file system.
-  // Once this method is called, `this.serenity` & `this.pipeline` will be in scope.
-  // This method should be used when registering any custom features; such as commands, traits, generators, providers, blocks, etc.
-  public onInitialize(): void {
-    this.logger.info("Sample plugin initialized!");
+  public override onInitialize(): void {
+    this.serenity.registerGenerator(AetherIslandsGenerator);
   }
 
-  // This method is called once all plugins have been initialized and all worlds have been loaded.
-  // This method should be used to start any services and tasks that the plugin requires.
-  public onStartUp(): void {
-    this.logger.info("Sample plugin started up!");
-  }
+  // Listen to world initialization events
+  public onWorldInitialize({ world }: WorldInitializeSignal): void {
+    // Register the custom block types
+    for (const type of BlockTypes) world.blockPalette.registerType(type);
 
-  // This method is called when the server is shutting down, but is called before the worlds and raknet server are shut down.
-  // This method should be used to stop any services and tasks that the plugin started up.
-  // This also should be used to clean up any resources that the plugin created via the `onInitialize` method.
-  public onShutDown(): void {
-    this.logger.info("Sample plugin shut down!");
+    // Register the custom item types
+    for (const type of ItemTypes) world.itemPalette.registerType(type);
+
+    // Register the custom recipes
+    for (const recipe of Recipes) world.itemPalette.registerRecipe(recipe);
   }
 }
 
-export default new SamplePlugin();
+export default new AetherPlugin();

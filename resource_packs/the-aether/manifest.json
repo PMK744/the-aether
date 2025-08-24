@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Aether Bedrock",
+    "description": "Aether Mod Textures for Bedrock",
+    "uuid": "de29c681-b100-4d89-87e0-a4b52d999831",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 16, 0]
+  },
+  "modules": [
+    {
+      "description": "Aether Mod Textures for Bedrock",
+      "type": "resources",
+      "uuid": "472a5efd-c9b9-4ab8-acfa-86188c4286f4",
+      "version": [1, 0, 0]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "skyroot_pickaxe": {
+      "textures": "textures/items/tools/skyroot_pickaxe.png"
+    },
+    "skyroot_axe": {
+      "textures": "textures/items/tools/skyroot_axe.png"
+    },
+    "skyroot_shovel": {
+      "textures": "textures/items/tools/skyroot_shovel.png"
+    },
+    "skyroot_sword": {
+      "textures": "textures/items/tools/skyroot_sword.png"
+    },
+    "skyroot_hoe": {
+      "textures": "textures/items/tools/skyroot_hoe.png"
+    }
+  }
+}
