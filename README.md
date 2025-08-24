@@ -1,5 +1,7 @@
 # The Aether
 
+> Disclaimer: This plugin is not affiliated with Mojang or the original Aether mod in any way. Please visit [https://www.curseforge.com/minecraft/mc-mods/aether](https://www.curseforge.com/minecraft/mc-mods/aether) for the original mod.
+
 > This plugin is still in early development. Expect bugs and incomplete features including items, blocks, and mobs.
 
 The plugins is a basic recreation of the popular Minecraft Java Edition mod, The Aether, but for Minecraft Bedrock Edition. It adds a new dimension, the Aether, which is a sky-themed world filled with new blocks, items, and mobs.
@@ -15,6 +17,8 @@ The plugins is a basic recreation of the popular Minecraft Java Edition mod, The
 
 ## Generator Usage
 To generate the Aether dimension, you must modify your world settings to include the Aether generator. This can done by modifying our world's `properties.jsib` file.
+
+![Generator Demo]("https://github.com/PMK744/the-aether/blob/typescript/public/banner.png?raw=true")
 
 ```json
 {
