@@ -1,0 +1,25 @@
+{
+  "name": "sample-plugin",
+  "version": "1.0.0",
+  "author": "SerenityJS",
+  "description": "Sample plugin provides a basic configuration for plugin usage in the SerenityJS software.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup",
+    "watch": "tsup --watch"
+  },
+  "keywords": [],
+  "peerDependencies": {
+    "@serenityjs/core": "*",
+    "@serenityjs/plugins": "*",
+    "@serenityjs/protocol": "*",
+    "@serenityjs/logger": "*",
+    "@serenityjs/nbt": "*"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3"
+  }
+}
