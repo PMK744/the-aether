@@ -16,9 +16,9 @@ The plugins is a basic recreation of the popular Minecraft Java Edition mod, The
 3. Restart your server to load the plugin.
 
 ## Generator Usage
-To generate the Aether dimension, you must modify your world settings to include the Aether generator. This can done by modifying our world's `properties.jsib` file.
+To generate the Aether dimension, you must modify your world settings to include the Aether generator. This can done by modifying your world's `properties.json` file.
 
-![Generator Demo]("https://github.com/PMK744/the-aether/blob/typescript/public/banner.png?raw=true")
+![Generator Demo](https://github.com/PMK744/the-aether/blob/typescript/public/banner.png?raw=true)
 
 ```json
 {
